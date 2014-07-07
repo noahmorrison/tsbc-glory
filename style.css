@@ -1,0 +1,108 @@
+/*
+ Theme Name:     Glory Child
+ Theme URI:      http://boxystudio.com
+ Description:    Glory Child Theme
+ Author:         Boxy Studio
+ Author URI:     http://boxystudio.com
+ Template:       glory
+ Version:        99
+*/
+
+@import url("../glory/style.css");
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+/* Twitter widget css
+-------------------------------------------------------------- */
+
+.widget_twitter li {
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #eeeeff
+}
+
+.widget_twitter a {
+  display: inline-block;
+}
+
+.widget_twitter .time-meta {
+  font-size: 8px;
+}
+
+.widget_twitter .entry-meta {
+  display: block;
+  text-align: right;
+  width: 100%;
+}
+
+.widget_twitter .from-meta {
+  display: none;
+}
+
+.widget_twitter .intent-meta {
+  display: none;
+}
+
+/* Paper Background
+-------------------------------------------------------------- */
+
+body:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  background: url('http://tristatebaptist.org/wp-content/uploads/2014/07/pattern_01-300x266.png') repeat;
+  background-color: rgb(49, 78, 52);
+}
+
+#wrap:before {
+  content: "";
+  position: absolute;
+  top: 186px;
+  height: 20px;
+  background: url(http://tristatebaptist.org/wp-content/uploads/2014/07/main_alt.png) 50% 0 repeat-x;
+  width: 100%;
+}
+
+/* Sermon Entries
+-------------------------------------------------------------- */
+
+.widget_recent_entries li {
+  padding-bottom: 20px;
+  font-size: 17px;
+}
+
+/* Service Times
+-------------------------------------------------------------- */
+
+#service_times {
+  font-size: 17px;
+  line-height: 37px;
+  color: #fff;
+}
+
+#service_times br:first-of-type {
+  display: none;
+}
+
+/* Pagination
+-------------------------------------------------------------- */
+
+#pagination li a,
+#pagination li span {
+  width: auto;
+}
+
+/* Sermon Page
+-------------------------------------------------------------- */
+
+.recent-sermons p:first-of-type,
+.sermon p:first-of-type {
+  display: none;
+}
+
+.powerpress_links_mp3 br {
+  display: none;
+}
