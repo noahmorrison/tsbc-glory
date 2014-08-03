@@ -8,6 +8,24 @@
  Version:        1.0.1
 */
 
+/*
+Config Notes
+Logo: http://tristatebaptist.org/wp-content/uploads/2014/07/Tri-State-Logo-300x991.png
+Logo Height (optional): 133
+Custom Font: None
+Main Color: #117d9e
+Background Color: #102055
+Replace Background with an Image: http://tristatebaptist.org/wp-content/uploads/2014/07/pattern_01-300x266.png
+Footer Text Style: Dark
+Homepage Blocks: Hide Event Countdown
+Right Footer Text: Copyright ©[year] Tri-State Baptist Church
+Contact Form "To" Email: info@tristatebaptist.org
+Map Address: Tri-State Baptist Church
+             654 Quinebaug Rd
+             Thompson, CT 06262
+Google Maps - Zoom Level: Normal
+*/
+
 @import url("../glory/style.css");
 
 /* Theme customization starts here
