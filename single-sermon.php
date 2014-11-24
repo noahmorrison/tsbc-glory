@@ -25,7 +25,13 @@
                                 ?>
 
 				<?php share_buttons(); ?>
-				<?php js_breadcrumbs($post->ID); ?>
+                                <p id="breadcrumbs">
+                                    <a href="<?php echo home_url() ?>">Home</a>
+                                    &nbsp;&gt;&nbsp;
+                                    <a href="<?php echo home_url(); echo '/series/'; echo $term->slug; ?>"><?php echo $term->name; ?></a>
+                                    &nbsp;&gt;&nbsp;
+                                    <?php echo $post->post_title; ?>
+                                </p>
 
                                 <img style="width:300px; height:150px;" src="<?php echo z_taxonomy_image_url($term->term_id, 'thumbnail'); ?>"> </img>
 				<h1 class="bit"><?php the_title(); ?></h2>
