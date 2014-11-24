@@ -23,6 +23,11 @@
 				<?php js_breadcrumbs($post->ID); ?>
 
 				<h1 class="bit"><?php the_title(); ?></h2>
+                                <?php
+                                  $term_generator = get_the_terms($post->ID, 'series');
+                                  $term = array_values($term_generator)[0];
+                                ?>
+                                <img style="width:300px; height:150px;" src="<?php echo z_taxonomy_image_url($term->term_id, 'thumbnail') ?>"> </img>
 			</header>
 
 			<article id="content" <?php post_class('left'); ?>>
