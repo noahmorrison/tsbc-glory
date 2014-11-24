@@ -6,12 +6,17 @@
 	
 	<section id="page">
 		<header>
-		
-			<?php $post = $posts[0]; ?>
+			<?php
+				$post = $posts[0];
+				$term_generator = get_the_terms($post->ID, 'series');
+				$term = array_values($term_generator)[0];
+			?>
+
 			<?php share_buttons(); ?>
 			<?php js_breadcrumbs($post->ID); ?>
 			
 			<?php echo '<h1 class="bit">'.__('Sermon Archive','glory').'</h1>'; ?>
+			<img style="width:300px; height:150px;" src="<?php echo z_taxonomy_image_url($term->term_id, 'thumbnail'); ?>"> </img>
 			
 		</header>
 
