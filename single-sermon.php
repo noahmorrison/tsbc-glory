@@ -33,7 +33,13 @@
                                     <?php echo $post->post_title; ?>
                                 </p>
 
-                                <img style="width:300px; height:150px;" src="<?php echo z_taxonomy_image_url($term->term_id, 'thumbnail'); ?>"> </img>
+                                <?php
+                                    $src = z_taxonomy_image_url($term->term_id, 'thumbnail');
+                                    if ($src) {
+                                        echo '<img style="width:300px; height:150px;" src="' . $src . '"> </img>';
+                                    }
+                                ?>
+
 				<h1 class="bit"><?php the_title(); ?></h2>
 			</header>
 
