@@ -28,8 +28,10 @@
                                 <p id="breadcrumbs">
                                     <a href="<?php echo home_url() ?>">Home</a>
                                     &nbsp;&gt;&nbsp;
+                                    <?php if ($term->slug): ?>
                                     <a href="<?php echo home_url(); echo '/series/'; echo $term->slug; ?>"><?php echo $term->name; ?></a>
                                     &nbsp;&gt;&nbsp;
+                                    <?php endif ?>
                                     <?php echo $post->post_title; ?>
                                 </p>
 
