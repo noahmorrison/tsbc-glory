@@ -18,7 +18,7 @@
 			<?php echo '<h1 class="bit">'.__('Sermon Archive','glory').'</h1>'; ?>
 
                         <?php
-                            $src = z_taxonomy_image_url($term->term_id, 'thumbnail');
+                            $src = z_taxonomy_image_url($term->term_id, 'full');
                             if ($src) {
                                 echo '<img style="width:300px; height:150px;" src="' . $src . '"> </img>';
                             }
