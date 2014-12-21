@@ -21,7 +21,9 @@
 			<header>
                                 <?php
                                   $term_generator = get_the_terms($post->ID, 'series');
-                                  $term = array_values($term_generator)[0];
+                                  if ($term_generator) {
+                                      $term = array_values($term_generator)[0];
+                                  }
                                 ?>
 
 				<?php share_buttons(); ?>
